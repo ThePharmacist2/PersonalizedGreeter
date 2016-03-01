@@ -25,10 +25,9 @@
         android:layout_height="wrap_content"
         android:text="@string/strGetGreeted"
         android:id="@+id/btnGreetMe"
-        android:layout_below="@+id/edtxtNameField"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="51dp"
-        android:onClick="greetTheUser" />
+        android:onClick="greetTheUser"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -48,4 +47,24 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="42dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="@string/strNamePlaceholderMid"
+        android:ems="10"
+        android:id="@+id/edtxtNameFieldMid"
+        android:layout_below="@+id/edtxtNameField"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="@string/strNamePlaceholderLast"
+        android:ems="10"
+        android:id="@+id/edtxtNameFieldLast"
+        android:layout_above="@+id/btnGreetMe"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
